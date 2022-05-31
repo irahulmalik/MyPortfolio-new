@@ -21,6 +21,7 @@
         display: block;
         position: fixed;
         right: 1rem;
+        z-index: 9999;
       }
       .menu-options-hamburger.hidden {
         display: none;
@@ -28,19 +29,38 @@
         right: 1rem;
       }
 
+      .menu-options-close {
+        display: block;
+        position: fixed;
+        right: 1rem;
+        z-index: 9999;
+      }
+      .menu-options-close.hidden {
+        display: none;
+        position: fixed;
+        right: 1rem;
+      }
+
+      .menu-options.hidden {
+        display: none;
+        transform: translateX(100%);
+      }
       .menu-options {
         display: flex;
         inset: 0 0 0 30%;
         padding: min(20vh, 2rem) 1rem;
         position: fixed;
-        transition: 1s ease-in;
         flex-direction: column;
         justify-content: space-between;
         background: hsl(0 0% 100% /0.8);
         min-height: 100vh;
         min-width: 100%;
         backdrop-filter: blur(0.5rem);
-        
+        animation-name: in-from-right;
+        animation-duration: 0.3s;
+        animation-timing-function: ease-in;
+        scroll-behavior: smooth;
+
         ul {
           // margin-top: 2rem;
           li {
@@ -52,9 +72,6 @@
             }
           }
         }
-      }
-      .menu-options.hidden {
-        display: none;
       }
     }
   }
@@ -176,11 +193,19 @@ a {
   }
 }
 
-@media (min-width: 750px){
-  .container{
+@media (min-width: 750px) {
+  .container {
     margin: 0;
     padding: 0;
     background-color: black;
+  }
+}
 
+@keyframes in-from-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
   }
 }
