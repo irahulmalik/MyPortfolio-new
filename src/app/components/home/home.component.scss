@@ -1,0 +1,30 @@
+.container {
+  margin: 0;
+  padding: 0;
+  .navbar {
+    .desktop-navbar {
+      display: hidden;
+    }
+    .mobile-navbar {
+      display: flex;
+      justify-content: space-between;
+      .logo {
+      }
+      .menu-options-hidden {
+      }
+      .menu-options {
+        display: flex;
+        justify-content: space-evenly;
+
+        ul {
+          li {
+            list-style: none;
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
