@@ -193,11 +193,133 @@ a {
   }
 }
 
+
 @media (min-width: 750px) {
   .container {
     margin: 0;
     padding: 0;
-    background-color: black;
+    .navbar {
+      .desktop-navbar {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 1rem;
+        margin-top: 0.5rem;
+        padding-top: 10px;
+        font-size: 1.8rem;
+        .menu-options {
+          display: flex;
+          justify-content: space-between;
+          ul {
+            margin: 0 1rem;
+            font-size: 1.5rem;
+          }
+          .link-line{
+            font-size: 1.5rem;
+          }
+        }
+      }
+      .mobile-navbar {
+        display: none;
+      }
+    }
+    .content {
+      margin: 0;
+      margin-top: 1rem;
+      padding: 0;
+      .main {
+        background-color: aliceblue;
+        padding: 1rem 1rem;
+        border-radius: 8px;
+        h1 {
+          font-size: 1.8rem;
+          margin: 0;
+          padding: 0;
+          color: rgb(134, 23, 238);
+        }
+        h2 {
+          margin: 0;
+          padding: 0;
+          font-size: 1.2rem;
+          font-weight: 300;
+          color: blueviolet;
+        }
+        .subscript {
+          font-size: 0.8rem;
+          font-weight: 100;
+        }
+        p {
+          // margin: 0;
+          // padding:0;
+          font-size: 1rem;
+          // font-weight: 300;
+          color: rgb(9, 4, 14);
+        }
+      }
+      .projects {
+        margin: 0;
+        margin-top: 1rem;
+        background-color: aliceblue;
+        padding: 1rem 1rem;
+        border-radius: 8px;
+        h2 {
+          font-size: 1.2rem;
+          font-weight: 350;
+          color: rgb(0, 0, 0);
+        }
+        .showcase {
+          background-color: white;
+          padding: 1rem 1rem;
+          // displayyour projects in cards make a card
+        }
+      }
+      .aboutme {
+        margin: 0;
+        margin-top: 1rem;
+        background-color: aliceblue;
+        padding: 1rem 1rem;
+        border-radius: 8px;
+        .doc {
+          width: auto;
+          //here will be icon for pdf
+          .doc-aat {
+            margin: 0 auto;
+            margin-top: 1rem;
+            width: 1rem;
+            height: 1rem;
+          }
+          h3 {
+            font-weight: 100;
+            text-align: center;
+          }
+        }
+      }
+      .contactme {
+        margin: 0;
+        margin-top: 1rem;
+        background-color: aliceblue;
+        padding: 1rem 1rem;
+        border-radius: 8px;
+        h2 {
+          margin: 0;
+          padding: 0;
+          font-size: 1.4rem;
+          font-weight: 300;
+          color: blueviolet;
+        }
+        h3 {
+          font-weight: 300;
+          font-size: 1rem;
+        }
+        svg {
+          height: 1rem;
+          width: 1rem;
+          &:hover {
+            transition: 0.2s ease-in;
+            fill: rgb(188, 130, 211);
+          }
+        }
+      }
+    }
   }
 }
 
