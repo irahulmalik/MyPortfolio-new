@@ -3,20 +3,27 @@
   padding: 0;
   .navbar {
     .desktop-navbar {
-      display: hidden;
+      display: none;
     }
     .mobile-navbar {
+      margin: 0;
+      padding: 0;
       display: flex;
       justify-content: space-between;
       .logo {
+        margin: 0;
       }
       .menu-options-hidden {
+        display: none;
       }
       .menu-options {
+        transition: 0.4s;
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: space-between;
 
         ul {
+          margin-top: 2rem;
           li {
             list-style: none;
             a {
@@ -27,4 +34,10 @@
       }
     }
   }
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
 }
