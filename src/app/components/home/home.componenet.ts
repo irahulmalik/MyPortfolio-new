@@ -9,6 +9,7 @@ export class HomeComponent implements OnInit {
   menuOptions: HTMLElement;
   hamburgerOption: HTMLElement;
   closeOption: HTMLElement;
+  name: String = 'hello world';
   constructor() {}
   ngOnInit() {
     this.menuOptions = document.getElementById('menu-options');

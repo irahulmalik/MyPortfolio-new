@@ -274,6 +274,11 @@ a {
         .showcase {
           background-color: white;
           padding: 1rem 1rem;
+          display: flex;
+          flex-wrap: wrap;
+          flex-grow: 1; 
+          gap: 1rem; 
+          // overflow: scroll;
           // displayyour projects in cards make a card
         }
       }
@@ -326,6 +331,24 @@ a {
           }
         }
       }
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    &:hover {
+      cursor: pointer;
+      color: rgb(188, 130, 211);
+      transition: 0.3s ease-in;
     }
   }
 }

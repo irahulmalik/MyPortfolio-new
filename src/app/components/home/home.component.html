@@ -4,24 +4,24 @@
       <div class="logo">
         <ul>
           <li>
-            <a class="logo-line" routerLink="/">Rahul Malik</a>
+            <a class="logo-line" routerLink="/" style="text-decoration:none;">Rahul Malik</a>
           </li>
         </ul>
       </div>
       <div class="menu-options">
         <ul>
           <li>
-            <a class="link-line" routerLink="#projects">Projects</a>
+            <a class="link-line" href="#projects">Projects</a>
           </li>
         </ul>
         <ul>
           <li>
-            <a class="link-line" routerLink="#aboutme">About Me</a>
+            <a class="link-line" href="#aboutme">About Me</a>
           </li>
         </ul>
         <ul>
           <li>
-            <a class="link-line" routerLink="#contactus">Contact Me</a>
+            <a class="link-line" href="#contactus">Contact Me</a>
           </li>
         </ul>
       </div>
@@ -101,7 +101,12 @@
         I have made lot of projects since i started at 16, but only few have
         made to my showcase...
       </h2>
-      <div class="showcase"></div>
+      <div class="showcase">
+        <app-card [appname] = "name"></app-card>
+        <app-card [appname] = "name"></app-card>
+        <app-card [appname] = "name"></app-card>
+        <app-card [appname] = "name"></app-card>
+      </div>
     </div>
     <div class="aboutme" id="aboutme">
       <div class="my-history">
