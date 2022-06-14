@@ -134,6 +134,14 @@
       background-color: aliceblue;
       padding: 1rem 1rem;
       border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      flex-grow: 1;
+      justify-content: space-around;
+      .my-history {
+        margin: auto;
+      }
       .doc {
         width: auto;
         //here will be icon for pdf
@@ -293,14 +301,22 @@ a {
         padding: 1rem 1rem;
         border-radius: 8px;
         min-height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: space-around;
+        .my-history {
+          margin: auto;
+        }
         .doc {
           width: auto;
+          margin: auto;
           //here will be icon for pdf
           .doc-aat {
-            margin: 0 auto;
-            margin-top: 1rem;
-            width: 1rem;
-            height: 1rem;
+            // margin: auto;
+            // margin-top: rem;
+            // width: 1rem;
+            // height: 1rem;
           }
           h3 {
             font-weight: 100;
