@@ -1,0 +1,42 @@
+.container {
+  position: relative;
+  top: 2rem;
+  content: '';
+  height: 0.3rem;
+  // width: 90vw;
+  background: rgb(183, 227, 233);
+  border-radius: 4px;
+  .events {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+
+    .event {
+      content: '';
+      margin-top: -4px;
+      width: 10px;
+      height: 10px;
+      background-color: red;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      &:hover {
+        cursor: pointer;
+      }
+
+      p {
+        display: none;
+        opacity: 0;
+      }
+      &:hover p {
+        display: block;
+        opacity: 1;
+        transition: 1s ease-in;
+        min-width: 200px;
+        border-radius: 5px;
+        border: 2px #000 solid;
+        padding: 0.5rem;
+        overflow: auto;
+      }
+    }
+  }
+}
